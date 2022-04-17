@@ -1,0 +1,49 @@
+body {
+    margin:  0;
+    padding: 0;;
+}
+
+table {
+    width: 500px;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    font-family: Arial, sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    padding: 1px;
+    width: 125px;
+    text-align: left;
+}
+
+.ficha-cadastral {
+    padding-top: 6rem;
+}
+
+.navbar {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+  }
+  .navbar a {
+    float: left;
+    color: #f1faee;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    color: #a8dadc;
+  }

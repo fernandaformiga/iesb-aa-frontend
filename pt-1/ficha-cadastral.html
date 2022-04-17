@@ -4,50 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <title>Ficha Cadastral</title>
+    <link rel="stylesheet" href="styles-ficha.css">
 </head>
 
 <body>
-    <h2>Ficha Cadastral</h2>
-    <form>
-        <table>
-            <tr>
-                <th><label for="nome">Nome:</label></th>
-                <th><input type="text" id="nome"></th>
-            </tr>
-            <tr>
-                <th><label for="rg">RG:</label></th>
-                <th><input type="text" id="rg"></th>
-                <th><label for="cpf">C.P.F.:</label></th>
-                <th><input type="text" id="cpf"></th>
-            </tr>
-            <tr>
-                <th><label for="endereco">Endereço:</label></th>
-                <th><input type="text" id="endereco"></th>
-            </tr>
-            <tr>
-                <th><label for="sexo">Sexo:</label></th>
-                <th>
-                    <select id="sexo">
-                        <option value="masculino">Masculino</option>
-                        <option value="feminino">Feminino</option>
-                    </select>
-                </th>
-                <th><label for="data-nascimento">Data Nascimento:</label></th>
-                <th><input type="text" id="data-nascimento"></th>
-            </tr>
-            <tr>
-                <th><label for="situacao-civil">Situação Civil:</label></th>
-                <th><input type="radio" id="situacao-civil" value="Solteiro(a)">Solteiro(a)</th>
-                <th><input type="radio" id="situacao-civil" value="Casado(a)" checked>Casado(a)</th>
-                <th><input type="radio" id="situacao-civil" value="Viúvo(a)">Viúvo(a)</th>
-            </tr>
-            <tr>
-                <th><input type="reset" value="Limpar Dados"></th>
-            </tr>
-        </table>
-    </form>
+    <div class="navbar">
+        <a href="./ficha-cadastral.html">ex. 1</a>
+        <a href="./index.html">ex. 2</a>
+    </div>
+    <div class="ficha-cadastral">
+        <h2>Ficha Cadastral</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td colspan="3"><input size="55" maxlength="55" type="text" id="nome" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="rg">RG:</label></td>
+                    <td><input type="text" id="rg" size="13" maxlength="13"></td>
+                    <td><label for="cpf">C.P.F.:</label></td>
+                    <td><input type="text" id="cpf" size="13" maxlength="13" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="endereco">Endereço:</label></td>
+                    <td colspan="3"><input size="55" maxlength="55" type="text" id="endereco" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="sexo">Sexo:</label></td>
+                    <td>
+                        <select id="sexo">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </td>
+                    <td><label for="data-nascimento">Data Nascimento:</label></td>
+                    <td><input type="text" id="data-nascimento" size="13" maxlength="13" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="situacao-civil">Situação Civil:</label></td>
+                    <td><input type="radio" name="situacao-civil" value="solteiro">Solteiro(a)</td>
+                    <td><input type="radio" name="situacao-civil" value="casado">Casado(a)</td>
+                    <td><input type="radio" name="situacao-civil" value="viuvo">Viúvo(a)</td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align:center"><input type="reset" value="Limpar Dados"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 
 </html>

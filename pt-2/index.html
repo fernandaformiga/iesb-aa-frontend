@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./ficha-cadastral.html">ex. 1</a>
+        <a href="./index.html">ex. 2</a>
+        </div>
+    <div class="ficha-cadastral">
+    <div class="form-div">
+        <h2>MacBook Pro 2021</h2>
+        <h3>Pesquisa de satisfação</h3>
+        <form>
+            <table>
+                <tr>
+                    <td colspan="5">A pesquisa é anônima e visa entender a opinião dos consumidores a respeito do produto MacBook Pro 2021 da Apple.</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><label for="computador-anterior">Seu computador anterior também era um Macbook?</label></td>
+                    <td><input type="radio" id="computador-anterior" name="computador-anterior" value="nao">Não</td>
+                    <td><input type="radio" id="computador-anterior" name="computador-anterior" value="sim">Sim</td>
+                </tr>
+                <tr>
+                    <td colspan="5" for="computador-anterior-justificativa"><label>Se a resposta anterior foi sim, o que acha do seu novo MacBook em comparação ao modelo
+                            anterior? <br> O que o levou a fazer a troca?</label></td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input type="textarea" name="computador-anterior-justificativa" style="width: 100%;"></td></tr>
+                <tr>
+                    <td colspan="5"><label for="nota-satisfacao">Em uma escala de 1 a 5, como avalia sua
+                            satisfação
+                            com o MacBook Pro 2021?</label></td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;"><input type="radio" id="nota-satisfacao" name="nota-satisfacao" value="1">1</td>
+                    <td style="width: 20%;"><input type="radio" id="nota-satisfacao" name="nota-satisfacao" value="2">2</td>
+                    <td style="width: 20%;"><input type="radio" id="nota-satisfacao" name="nota-satisfacao" value="3">3</td>
+                    <td style="width: 20%;"><input type="radio" id="nota-satisfacao" name="nota-satisfacao" value="4">4</td>
+                    <td style="width: 20%;"><input type="radio" id="nota-satisfacao" name="nota-satisfacao" value="5">5</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><label>Quais critérios foram determinantes para optar por este modelo?</label></td>
+                    <td colspan="2">
+                        <select multiple="multiple">
+                            <option value="componentes">Processador, memória e outros componentes</option>
+                            <option value="2">Mais adequado para trabalho/estudo</option>
+                            <option value="2">Estética</option>
+                            <option value="2">Usabilidade</option>
+                            <option value="2">Qualidade do equipamento</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5"><label>Quais os maiores pontos positivos do produto?</label></td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input type="textarea" name="pontos-positivos" style="width: 100%;"></td></tr>
+                <tr>
+                <tr>
+                    <td colspan="5"><label>E os negativos?</label></td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input type="textarea" name="pontos-negativos" style="width: 100%;"></td></tr>
+                <tr>
+                <tr>
+                    <td colspan="5"><label>Recomendaria este produto a um amigo?</label></td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;"><input type="radio" id="nota-satisfacao" name="nota-satisfacao" value="1">1</td>
+                    <td style="width: 20%;"><input type="radio" id="nota-satisfacao" name="nota-satisfacao" value="2">2</td>
+                    <td style="width: 20%;"><input type="radio" id="nota-satisfacao" name="nota-satisfacao" value="3">3</td>
+                    <td style="width: 20%;"><input type="radio" id="nota-satisfacao" name="nota-satisfacao" value="4">4</td>
+                    <td style="width: 20%;"><input type="radio" id="nota-satisfacao" name="nota-satisfacao" value="5">5</td>
+                </tr>
+                <tr><td colspan="5"><input class="button" type="submit" id="submit" onclick="submit()" value="Enviar"></td></tr><br>
+                <tr><td colspan="5"><input class="button" type="reset" id="reset" onclick="reset()" value="Limpar dados"></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
